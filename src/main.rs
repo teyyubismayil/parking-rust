@@ -21,6 +21,7 @@ fn main() {
             },
             "leave" => {
                 p.leave();
+                println!("Left");
             },
             "bye" => {
                 println!("Exiting");
