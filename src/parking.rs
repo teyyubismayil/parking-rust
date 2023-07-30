@@ -15,6 +15,8 @@ impl Parking {
     }
     
     pub fn leave(&mut self) {
+        let _guard = self.m.lock().unwrap();
+        
         self.c += 1;
     }
 
